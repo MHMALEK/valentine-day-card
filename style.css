@@ -3,16 +3,33 @@
   --background-color: #ebc8c0;
   --white: #fff;
 }
+@font-face {
+  font-family: "nozha";
+  src: url("digi-nozha.ttf") format("truetype");
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: 120%!important;
+  }
+  .cat-image {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 700px;
+    margin: 100px auto!important;
+  }
+}
+
 body {
-  font-family: Tahoma;
+  font-family: "nozha";
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
+
   color: var(--heart-color);
   background-image: url("images/valentine-background.png");
   background-position: center center;
@@ -71,5 +88,5 @@ body {
 
 .bear {
   margin-top: 30px;
-  width: 300px
+  width: 300px;
 }
